@@ -2,10 +2,10 @@
 #######################################################################################
 #  Author: Chris Karakannas, Jan 2021
 #  Arguments:
-#  1. A date parameter stricly in the format 'DD-MM-YYYY'
+#  1. A date parameter in the format 'DD-MM-YYYY' OR 'DD/MM/YYYY'
 #  Note: The date argument is mandatory.
 #  Usage: A simple script to check the validity of an input date that is in the 
-#  format 'DD-MM-YYYY'. A WARNING message is shown if the date provided is in the future.
+#  format 'DD MM YYYY'. A WARNING message is shown if the date provided is in the future.
 #######################################################################################
 
 isValidDate()
