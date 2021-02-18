@@ -13,10 +13,10 @@ isValidDate()
   local DATE="$1";
   d=${DATE:0:2}; m=${DATE:3:2}; Y=${DATE:6:4};
   echo "year=$Y, month=$m, day=$d";
-  if [[ $DATE =~ ^[0-9]{2}-[0-9]{2}-[0-9]{4}$ ]] && date -d "$Y-$m-$d" &> /dev/null; then
+  if [[ $DATE =~ ^[0-9]{2}[/-]{1}[0-9]{2}[/-]{1}[0-9]{4}$ ]] && date -d "$Y-$m-$d" &> /dev/null; then
     echo "Date ${DATE} is valid."
   else
-    echo "Date ${DATE} NOT a valid DD-MM-YYYY format!"
+    echo "Date ${DATE} OR date format is not valid!"
     exit 1
   fi
   current_date=$(date --date=$(date '+%D') '+%s')
